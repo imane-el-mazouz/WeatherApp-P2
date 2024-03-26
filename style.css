@@ -1,0 +1,12 @@
+body{
+    background-image: url("/PICTURES/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background-color:rgba(13, 30, 190, 0.24);
+    
+}
