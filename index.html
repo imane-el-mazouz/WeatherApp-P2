@@ -8,19 +8,83 @@
     <title>index</title>
 </head>
 <body>
+<div class="search">
+    <input type="text" id="cityInput" placeholder="enter city name">
+    <button>   <img src="PICTURES/search.png">   </button>
+</div>
+<div class="cards">
+<div class="card">
+    <div class="weather">
+        <img src="PICTURES/sun.png" class="weather-icon">
+        <h1>30°C</h1>
+        <h2>Sunny</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="/PICTURES/humidity.png" alt="">
+                    <div >
+                    <p class="humidity">30% </p>
+                    <p id="hum" style="color: white">Humidity</p>
+                    </div>
+                    </div>
+                <div class="col">
+                    <img src="/PICTURES/windspeed.png" alt="">
+                    <div>
+                        <p class="windspeed">30Km/h</p>
+                        <p id="wind" style="color: white;display: flex;">WindSpeed</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
     <div class="card">
-            <div class="search">
-                <input type="text" placeholder="enter city name" >
-                <button>
-                    <img src="PICTURES/search.png">
-                </button>
-
-
+        <div class="weather">
+            <img src="PICTURES/cloudy-day.png" class="weather-icon">
+            <h1>18°C</h1>
+            <h2>Cloudy</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="/PICTURES/humidity.png" alt="">
+                    <div >
+                        <p class="humidity">80% </p>
+                        <p id="hum" style="color: white">Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="/PICTURES/windspeed.png" alt="">
+                    <div>
+                        <p class="windspeed">10Km/h</p>
+                        <p id="wind" style="color: white;display: flex;">WindSpeed</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
-    <script src="script.js"></script>
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div class="card">
+        <div class="weather">
+            <img src="PICTURES/rainy-day.png" class="weather-icon">
+            <h1>6°C</h1>
+            <h2>Rainy</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="/PICTURES/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">70% </p>
+                        <p id="hum" style="color: white">Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="/PICTURES/windspeed.png" alt="">
+                    <div>
+                    <p class="windspeed">17Km/h</p>
+                    <p id="wind" style="color: white;display: flex;">WindSpeed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
