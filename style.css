@@ -1,5 +1,24 @@
+nav {
+    height: 70px;
+}
+.nav-link {
+    font-weight: 500;
+}
+.nav-link:hover, #nav-active {
+    color: white;
+}
+.custom-navbar {
+    background-color: rgba(0, 102, 255, 0.24);
+}
+.nav-item-border {
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 255, 0.44);
+}
+
 body{
-    background-image: url('/PICTURES/bg4.jpg');
+   background-image: url('/PICTURES/bg4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -14,7 +33,7 @@ body{
 
 .card{
     width: 30%;
-    background-color: rgba(0, 102, 255, 0.06);
+    background-color: rgba(0, 102, 255, 0.24);
     margin: 100px auto 100px auto;
     border-radius: 20px;
     padding: 40px 35px;
@@ -32,7 +51,7 @@ body{
 .search input{
     border: 0;
     outline: 0;
-    background-color: rgba(0, 102, 255, 0.2);
+    background-color: rgba(0, 102, 255, 0.24);
     padding: 10px 25px;
     height: 60px;
     border-radius: 30px;
@@ -45,7 +64,7 @@ body{
 }
 .search button{
     border: 0;
-    background-color: rgba(0, 102, 255, 0.2);
+    background-color: rgba(0, 102, 255, 0.24);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -54,7 +73,7 @@ body{
 .search button img{
     width: 26px;
 }
-.weather-icon{
+.weather-icon,.weather-icon1,.weather-icon3{
     width: 170px;
     margin-top: 30px;
 }
@@ -88,7 +107,7 @@ body{
     justify-content: space-between;
     margin-top: 40px;
 }
-.humidity, .windspeed {
+.humidity,.humidity1,.humidity3,.windspeed ,.windspeed1,.windspeed3 {
     font-size: 15px;
     color: white;
     margin-top: -6px;
@@ -98,7 +117,19 @@ body{
 .details p {
     margin-bottom: 3px;
 }
+
 @media only screen  and (min-width: 200px) and (max-width: 640px){
+    .custom-navbar {
+        height: auto;
+    }
+
+    .nav-link {
+        font-weight: 400;
+    }
+
+    .nav-item-border {
+        padding: 5px 10px;
+    }
     .cards {
         flex-direction: column;
         align-items: center;
