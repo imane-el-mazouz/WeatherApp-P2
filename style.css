@@ -18,7 +18,7 @@ nav {
 }
 
 body{
-   background-image: url('/PICTURES/bg4.jpg');
+    background-image: url('/PICTURES/bg4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -39,6 +39,7 @@ body{
     padding: 40px 35px;
     text-align: center;
 }
+
 
 .search{
     width: 100%;
@@ -118,52 +119,54 @@ body{
     margin-bottom: 3px;
 }
 
-@media only screen  and (min-width: 200px) and (max-width: 640px){
-    .custom-navbar {
-        height: auto;
+        @media only screen  and (min-width: 200px) and (max-width: 640px) {
+        .custom-navbar {
+            height: auto;
+        }
+
+        .nav-link {
+            font-weight: 400;
+        }
+
+        .nav-item-border {
+            padding: 5px 10px;
+        }
+
+        .cards {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 90%;
+        }
+
+        .search input {
+            font-size: 18px;
+            width: 400px;
+        }
+
+        .weather-icon {
+            width: 170px;
+            margin-top: 30px;
+        }
+
+        .weather h1 {
+            font-size: 45px;
+        }
+
+        .weather h2 {
+            font-size: 35px;
+        }
+
+        .col img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .humidity, .windspeed {
+            font-size: 15px;
+            margin-top: -6px;
+        }
     }
 
-    .nav-link {
-        font-weight: 400;
-    }
-
-    .nav-item-border {
-        padding: 5px 10px;
-    }
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
-
-    .search input {
-        font-size: 18px;
-        width: 400px;
-    }
-
-    .weather-icon {
-        width: 170px;
-        margin-top: 30px;
-    }
-
-    .weather h1 {
-        font-size: 45px;
-    }
-
-    .weather h2 {
-        font-size: 35px;
-    }
-
-    .col img {
-        width: 40px;
-        margin-right: 10px;
-    }
-
-    .humidity, .windspeed {
-        font-size: 15px;
-        margin-top: -6px;
-    }
-}

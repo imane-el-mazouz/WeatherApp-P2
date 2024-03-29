@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchBtn = document.querySelector(".search button");
     const weatherIcon = document.querySelector(".weather-icon");
 
-
     searchBtn.addEventListener("click", function() {
         const cityName = searchBox.value;
         getWeather(cityName,weatherIcon);
+
     });
 });
 
@@ -38,6 +38,12 @@ function getWeather(cityName,weatherIcon) {
         })
         .then(function(data) {
             console.log(data);
+
+            document.querySelectorAll('.card').forEach(card => {
+                card.style.display = 'none';
+            });
+            document.querySelectorAll('.card')[1].style.display = 'block';
+
             document.querySelector(".city").innerHTML = data.name;
             document.querySelector(".temp").innerHTML = data.main.temp + "°C";
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
@@ -65,3 +71,7 @@ function updateIcon(weatherIcon, weatherCondition) {
         weatherIcon.src = "PICTURES/sunny-day.png";
     }
 }
+function redirectToSite() {
+    window.location.href = 'https://www.dateaujourdhui.com/';
+}
+
